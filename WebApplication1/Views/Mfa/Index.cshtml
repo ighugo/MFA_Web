@@ -1,0 +1,8 @@
+﻿@using (Html.BeginForm("ResetMfa", "Mfa", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="userUpn">User UPN:</label>
+        <input type="text" class="form-control" id="userUpn" name="userUpn" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Reset MFA</button>
+}

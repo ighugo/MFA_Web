@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Reset MFA";
+}
+
+<h1>Reset MFA</h1>
+
+<form asp-action="ResetMfa" method="post">
+    <div class="form-group">
+        <label for="userUpn">Digite o e-mail do Usuário:</label>
+        <input type="text" class="form-control" id="userUpn" name="userUpn" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Reset MFA!</button>
+</form>
